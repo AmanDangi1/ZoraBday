@@ -198,7 +198,7 @@ div#sea {
 .icons .row span {
   color: #e5e5e5;
   text-shadow: 4px 4px 0 rgba(96, 125, 139, 0.4);
-  font-size: 50px;
+  font-size: 56px !important;
   display: inline-block;
   opacity: 0;
   transition: transform 0.5s ease-in, opacity 0.7s;
@@ -373,8 +373,8 @@ div#sea {
 }
 
 .step-2 .icons .row span:nth-child(13) {
-  -webkit-transition-delay: 0.65s;
-  transition-delay: 0.65s;
+  -webkit-transition-delay: 0.2s;
+  transition-delay: 0.2s;
 }
 
 .step-2 .icons span, .step-3 .icons span, .step-4 .icons span {
