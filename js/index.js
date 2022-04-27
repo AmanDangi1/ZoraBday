@@ -270,6 +270,7 @@ window.onload = function () {
     }
     if (step === 4) {
       reveal();
+
       return;
     }
     setTimeout(openBox, stepMinutes[step - 1]);
@@ -281,23 +282,24 @@ window.onload = function () {
 };
 
 function reveal() {
-  document.querySelector('.merrywrap').style.backgroundColor = 'transparent';
+  document.querySelector('.merrywrap').style.opacity = 0;
+    
 
   loop();
 
   var w, h;
   if (window.innerWidth >= 1000) {
-    w = 295;h = 185;
+    w = 700;h = 500;
   } else
   {
-    w = 255;h = 155;
+    w = 700;h = 500;
   }
 
   var ifrm = document.createElement("iframe");
- // ifrm.setAttribute("src", "https://www.youtube.com/embed/gbICivOO26U?controls=0&loop=1&autoplay=1");
-  //ifrm.style.width = `${w}px`;
-  //ifrm.style.height = `${h}px`;
-  ifrm.style.border = 'none';
+  ifrm.setAttribute("src", "https://www.youtube.com/embed/gbICivOO26U?controls=0&loop=1&autoplay=1");
+  ifrm.style.width = `${w}px`;
+  ifrm.style.height = `${h}px`;
+  ifrm.style.border = '1px';
   document.querySelector('#video').appendChild(ifrm);
 }
 

@@ -39,6 +39,25 @@ div#video iframe {
   height: 155px;
 }
 
+.happy{
+  color: Pink;
+  margin-left: 20px;
+  font-size: 100px;
+  text-shadow: 2px;
+  animation: neon .08s ease-in-out infinite alternate;
+}
+.Birthday{
+  color: blueviolet;
+ margin-left: 40px;
+   font-size: 100px;
+   animation: neon .08s ease-in-out infinite alternate;
+}
+.zora{
+  color: darkcyan;
+  margin-left: 70px;
+    font-size: 100px;
+    animation: neon .08s ease-in-out infinite alternate;
+}
 #people {
   position: absolute;
   bottom: 65px;
@@ -69,9 +88,11 @@ div#sea {
   left: 0px;
   bottom: 0px;
   top: 0px;
-  background-color: #d44;
-  transition: background-color .5s ease;
+  background: url(GroupPhoto.JPG)  no-repeat center fixed;
+  background-size: cover;
+  opacity: 1;
 }
+
 
 .giftbox {
   position: absolute;
@@ -412,6 +433,10 @@ div#sea {
   right: 50px;
 }
 
+.bday{
+left: 20px;
+
+}
 .moon .crater3 {
   position: absolute;
   width: 15px;
@@ -448,8 +473,8 @@ div#sea {
   }
 
   div#video iframe {
-    width: 295px;
-    height: 185px;
+    width: 600px;
+    height: 400px;
   }
 
   .moon {
